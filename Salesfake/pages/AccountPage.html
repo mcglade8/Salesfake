@@ -1,0 +1,647 @@
+<DOCTYPE! html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+	<link rel="stylesheet" href="allpages.css">
+
+</head>
+<head>
+
+
+</head>
+<style>
+	
+</style>
+<body>
+<table style="display: inline">
+<tr>
+<th>
+<div class = "logo" style="width:300px">
+    <img src = "images/Upstart_ColorBlack.png" alt="Upstart" style="height:50px; width:auto;float:left"></div></th>
+    <th>
+<div class="topnav">
+	<input type="text" placeholder = "Search">
+	
+</div>
+</th>
+
+</tr>
+</table>
+<div style="display: inline; float:right; margin-left:auto; text-align: text-top"><img id="mylogo" src="images/brand.png" style="height:70px;width:auto;border-radius:10px"></div>
+
+<table style="border-top:#00807B 2px solid;width:100%;margin-top:20px;table-layout:auto;margin-bottom:0px">
+    <tr>
+<th>
+<div class= "menu">
+	<img src="images/barHover.png" class = "menu" alt="menu">
+</div></th>
+
+<th><div class="button"><a href="../Salesfake.html">Home</a></div></th>
+<th><div class="button"><a href="SalesfakeUnassigned.html">Unassigned Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeStart.html">CRB/FW Income Verification Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeFinish.html">CRB/FW Finisher Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeCases.html">On-Boarding Case Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeAuto.html">Auto_Loans</a></div></th>
+<th><div class="button" id="navMore"><a href="#more">More</a></div></th>
+<th><div class="button" id="modTaskbar"><a href="#taskbar">
+	<img src="images/pencil.png" class = "menu" alt="taskbar">
+</a></div></th>
+</tr>
+</table>
+
+
+<div class="chunk">
+	<div style="display:block;background-color:#d3d3d3">
+		<img src="images/case.png" style="display:inline-block;width:50px;height:auto;margin-left:15px">
+		<div style="display:inline-block">
+			<p>Person Account</p>
+			<h3 name="aplname"><a href="#accountpage">Applicant Name</a></h3>
+		</div>
+
+		<div style="float:right;margin-right:15px;margin-top:15px">
+			<div class="app-button" style="display:inline-block;vertical-align:top"><a style="text-decoration:none;color:black;margin-left:2px;margin-right:2px" href="#follow">+ Follow</a></div>
+			<div class="app-button" style="display:inline-block;vertical-align:top"><a style="text-decoration:none;color:black;margin-left:2px;margin-right:2px" href="#edit">Edit</a></div>
+			<div class="app-button" style="display:inline-block;vertical-align:top"><a style="text-decoration:none;color:black;margin-left:2px;margin-right:2px" href="#newcontact">New Contact</a></div>
+			<div class="app-button" style="display:inline-block;vertical-align:top"><a style="text-decoration:none;color:black;margin-left:2px;margin-right:2px" href="#newopportunity">New Opportunity</a></div>
+			<div class="app-button" style="display:inline-block;vertical-align:top"><a href="#morecase"><img src="images/exparrow.png" class="arrowasbutton"></a></div>
+		</div>
+	</div>
+	<div style="display:block" class="fa-about">
+		<div style="display:inline-block;width:10%;margin-left:15px">
+			<p>Title</p>
+			<br>
+		</div>
+		<div style="display:inline-block;width:20%">
+			<p>Phone</p>
+			<p id="phonenumber" style="text-decoration:none"><a href="#phone">614-000-0000</a></p>
+		</div>
+		<div style="display:inline-block;width:20%">
+			<p>Email</p>
+			<p><a href="#email" name="aplemail">apl.email@domain.com</a></p>
+		</div>
+		<div style="display:inline-block;width:10%">
+			<p>Account Owner</p>
+			<p id="accown">*.* Jeff Keltner<a href="#changeowner"><img src="images/chown.png" style="width:12px;height:12px"></a></p>
+		</div>
+	</div>
+</div>
+<span class="chunk-section" style="width:65%">
+    <div class="tab" style="width:100%;display:table-row">
+        <button class="tablinks" style="background-color:#82c7ff" onclick="openTab(event,'Details')">Details</button>
+        <button class="tablinks" onclick="openTab(event,'Related')">Related</button>
+        <button class="tablinks" onclick="openTab(event,'News')">News</button>
+        <button class="tablinks" onclick="openTab(event,'Consents')">Consents</button>
+    </div>
+    <div id="Details" class="tabcontent">
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> Contact Detail</button>
+        <div class="content" style="display:block">
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Account Name</td><td name="aplname">Applicant Name</td></tr>
+                <tr><td>Title</td><td style="color:white">none</td></tr>
+                <tr><td>Contact OFAC Flag</td><td><input type="checkbox"></td></tr>
+                <tr><td>Individual Ownership Pct.</td><td style="color:white">none</td></tr>
+                <tr><td>Email</td><td><a name="aplemail">apl.email@domain.com</a></td></tr>
+                <tr><td>Email Verification Status</td><td>valid</td></tr>
+            </table>
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Time Zone</td><td>Pacific</td></tr>
+                <tr><td>Phone</td><td>614-000-0000</td></tr>
+                <tr><td>Birthdate</td><td>01/02/0304</td></tr>
+                <tr><td>Signin IP Address</td><td>192.168.1.1</td></tr>
+                <tr><td>Email Verification Category</td><td>valid</td></tr>
+            </table>
+        </div>
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> Address Information</button>
+        <div class="content" style="display:block">
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Mailing Address</td><td name="physicaladdress">1234 Upstart St, Columbus, OH 44444</td></tr>
+            </table>
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Billing address</td><td style="color:white">none</td></tr>
+            </table>
+        </div>
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> Account Information</button>
+        <div class="content" style="display:block">
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Upstart ID (Text)</td><td>Deprecated</td></tr>
+                <tr><td>user_uuid</td><td>def234-9257-29342-1293732849</td></tr>
+                <tr><td>Other Phone</td><td style="color:white">none</td></tr>
+                <tr><td>Phone- For SMS</td><td>614-000-0000</td></tr>
+                <tr><td>Backer Account Type</td><td style="color:white">none</td></tr>
+                <tr><td>DoB Bureau</td><td style="color:white">none</td></tr>
+            </table>
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>User ID</td><td>30,000,000</td></tr>
+                <tr><td>Account Record Type</td><td>Upstart</td></tr>
+                <tr><td>Upstart Profile</td><td><a href="#admin" id="prodlink">https://www.upstart.com/admin/upstarts/000000000/review</a></td></tr>
+                <tr><td>Phone- For SMS</td><td>614-000-0000</td></tr>
+                <tr><td>Backer Account Type</td><td style="color:white">none</td></tr>
+                <tr><td>DoB Bureau</td><td style="color:white">none</td></tr>
+            </table>
+        </div>
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> Marital Status</button>
+        <div class="content" style="display:block">
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Marital Status</td><td style="color:white">none</td></tr>
+                <tr><td>spouse address</td><td style="color:white">none</td></tr>
+                <tr><td>spouse name</td><td style="color:white">none</td></tr>
+            </table>
+        </div>
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> Loan Detail</button>
+        <div class="content" style="display:block">
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Funded_Loans (new)</td><td>0</td></tr>
+            </table>
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>No of FAs (i)</td><td>1</td></tr>
+            </table>
+        </div>
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> Op-Out Detail</button>
+        <div class="content" style="display:block">
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Email Opt Out</td><td><input type="checkbox"></td></tr>
+            </table>
+        </div>
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> System Information</button>
+        <div class="content" style="display:block">
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Created By</td><td>Product 01/02/0304</td></tr>
+            </table>
+            <table style="width:45%;font-size:12px;display:inline-table">
+                <tr><td>Last Modified By</td><td>Platform Services, 13/32/2319 12:00 pm</td></tr>
+            </table>
+        </div>
+    </div>
+    <div class="tabcontent" id="Related">
+        <div class="chunk-section" style="padding:10px">
+            <div style="padding:5px"><img src="images/merge2.png" style="width:20px;height:20px"><b>We found no potential duplicates of this Account</b></div>
+            <div style="padding:5px">No duplicate rules are activated. Activate duplicate rules to identify potential duplicate records.</div>
+        </div>
+
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:80px;padding:10px">
+                <img src="images/dollarbill.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Funding Agreements (1)</h3>
+                <p style="font-size:12px">1 item - Sorted by Date/Time Opened - Updated a few seconds ago</p>
+            </div>			
+            <table style="background-color:white; width:100%;text-align:left;display:inline">
+                <tr>
+                <th>Funding Agreement Name</th><th>Admin Profile Link</th><th>Product Status</th><th>Loan ID</th>
+                </tr>
+                <tr>
+                <td><a href="FakeFundingAgreement.html">a75748392</a></td><td><a href="#product">https://www.upstart.com/admin...</a></td><td>Docs Submitted</td><td>758493903</td>
+                </tr>
+
+            </table>
+            <img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)">
+            <div style="text-align: center;border-top:1px solid #000"><a href="#viewall">View All</a></div>
+        </div>
+
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:50px;padding:10px">
+                <img src="images/hammer.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Auto Loans (0)</h3>
+            </div>
+        </div>
+
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:50px;padding:10px">
+                <img src="images/table.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Invitations to Apply Eligibilities (0)</h3>
+            </div>
+        </div>
+
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:50px;padding:10px">
+                <img src="images/case.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Cases (1)</h3>
+            </div>
+            <div>
+                <table style="display:inline">
+                    <tr><td><a href="FakeCase.html" name="casenum">01234567</a></td></tr>
+                    <tr><td>Contact</td><td><a href="AccountPage.html" name="aplname">Applicant Name</a></td></tr>
+                    <tr><td>Subject</td><td><a href="FakeCase.html" name="casesubject">RE: Help!</a></td></tr>
+                    <tr><td>Priority:</td><td>Medium</td></tr>
+                </table>
+                <img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)">
+            </div>
+            <div style="text-align: center;border-top:1px solid #000"><a href="#viewall">View All</a></div>
+        </div>
+
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:50px;padding:10px">
+                <img src="images/city.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Person Account History (6+)</h3>
+            </div>			
+            <table style="background-color:white; width:100%;text-align:left;display:inline">
+                <tr>
+                <th>Date</th><th>Field</th><th>User</th><th>Original Value</th><th>New Value</th>
+                </tr>
+                
+                <tr><td>13/31/3060 12:01 PM</td><td>Signin IP Address</td><td><a href="#platformserv">Platform Services</a></td><td>2600:1700:a750:dg54...</td><td>2600:1700:a750:dg54...</td></tr>
+                <tr><td>13/31/3060 11:46 AM</td><td>Signin IP Address</td><td><a href="#platformserv">Platform Services</a></td><td>2600:1700:a750:dg54...</td><td>2600:1700:a750:dg54...</td></tr>
+                <tr><td>13/31/3060 11:02 AM</td><td>Signin IP Address</td><td><a href="#platformserv">Platform Services</a></td><td>2600:1700:a750:dg54...</td><td>2600:1700:a750:dg54...</td></tr>
+                <tr><td>13/31/3060 8:30 AM</td><td>Signin IP Address</td><td><a href="#platformserv">Platform Services</a></td><td>2600:1700:a750:dg54...</td><td>2600:1700:a750:dg54...</td></tr>
+                <tr><td>13/30/3060 8:45 PM</td><td>Signin IP Address</td><td><a href="#platformserv">Platform Services</a></td><td>2600:1700:a750:dg54...</td><td>2600:1700:a750:dg54...</td></tr>
+                <tr><td>13/30/3060 5:55 PM</td><td>Signin IP Address</td><td><a href="#platformserv">Platform Services</a></td><td>2600:1700:a750:dg54...</td><td>2600:1700:a750:dg54...</td></tr>
+
+
+            </table>
+            <img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)">
+            <div style="text-align: center;border-top:1px solid #000"><a href="#viewall">View All</a></div>
+        </div>
+
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:50px;padding:10px">
+                <img src="images/ccard.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Contact Point Consents (3)</h3>
+            </div>			
+            <table style="background-color:white; width:100%;text-align:left;display:inline">
+                <tr>
+                <th>Name</th><th>Privacy Consent Status</th><th>Effective From</th><th>Effective To</th>
+                </tr>
+                
+                <tr><td><a href="#optin">5873939-SMS Marke...</a></td><td>Opt In</td><td>13/30/3060 12:01 PM</td><td></td><td><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)"></td></tr>
+                <tr><td><a href="#optin">5873939-SMS Conse...</a></td><td>Opt In</td><td>13/30/3060 12:01 PM</td><td></td><td><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)"></td></tr>
+                <tr><td><a href="#optin">5873939-SMS Conse...</a></td><td>Opt In</td><td>13/30/3060 5:19 PM</td><td></td><td><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)"></td></tr>
+
+
+            </table>
+            <div style="text-align: center;border-top:1px solid #000"><a href="#viewall">View All</a></div>
+        </div>
+
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:50px;padding:10px">
+                <img src="images/ccard.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Contact Point Phones (1)</h3>
+            </div>			
+            <table style="background-color:white; width:100%;text-align:left;display:inline">
+                <tr>
+                <th>Telephone Number</th><th>Is SMS Capable</th><th>Effective From</th><th>Is Primary</th>
+                </tr>
+                
+                <tr><td><a href="#optin">123-555-0000</a></td><td><input type="checkbox" checked></td><td><input type="checkbox" checked></td><td><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)""></td></tr>
+
+            </table>
+            <div style="text-align: center;border-top:1px solid #000"><a href="#viewall">View All</a></div>
+        </div>
+
+    </div>
+    <div id="News" class="tabcontent">
+        <button type="button" class="collapsible"><img src="images/exparrow.png" class="rotatable"> Twitter</button>
+            <div class="content" style="display:block">
+            <p style="display:inline">Learn more using Twitter</p><button class="app-button" style="display:inline;float:right">Sign in using Twitter</button>
+            <p>Sign in to link a Twitter profile, find people in common, and quickly access recent tweets. </p>
+            </div>
+    </div>
+    <div id="Consents" class="tabcontent">
+        <div class="chunk-section">
+            <div style="background-color: #d3d3d3;height:50px;padding:10px">
+                <img src="images/ccard.png" style="height:20px;width:20px;display:inline">
+                <h3 style="display:inline">Contact Point Consents (3)</h3>
+            </div>			
+            <table style="background-color:white; width:100%;text-align:left;display:inline">
+                <tr>
+                <th>Name</th><th>Privacy Consent Status</th><th>Effective From</th><th>Effective To</th>
+                </tr>
+                
+                <tr><td><a href="#optin">5873939-SMS Marke...</a></td><td>Opt In</td><td>13/30/3060 12:01 PM</td><td></td><td><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)"></td></tr>
+                <tr><td><a href="#optin">5873939-SMS Conse...</a></td><td>Opt In</td><td>13/30/3060 12:01 PM</td><td></td><td><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)"></td></tr>
+                <tr><td><a href="#optin">5873939-SMS Conse...</a></td><td>Opt In</td><td>13/30/3060 5:19 PM</td><td></td><td><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg)"></td></tr>
+
+
+            </table>
+            <div style="text-align: center;border-top:1px solid #000"><a href="#viewall">View All</a></div>
+        </div>
+    </div>
+</span>
+<span class="chunk-section" style="width:34%;float:right">
+    <div class="tab" style="width:100%;display:table-row">
+        <button class="tablinks2" style="background-color:#82c7ff" onclick="openTab2(event,'Activity')">Activity</button>
+        <button class="tablinks2" onclick="openTab2(event,'Chatter')">Chatter</button>
+    </div>  
+
+
+
+    <div id="Activity" class="tabcontent2">
+            <span style="border: 1px solid #000;border-radius:5px;padding:3px"><img src="images/checklist.png" style="width:20px;height:20px;vertical-align:middle"><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg);vertical-align:middle"></span>
+            <span style="border: 1px solid #000;border-radius:5px;padding:3px"><img src="images/phonebook.png" style="width:20px;height:20px;vertical-align:middle"><img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg);vertical-align:middle"></span><br>
+            <div style="float:right">
+                <div style="font-size:14px;display:inline-block;vertical-align: top;margin-top:5px">Filters: All time - All activites - All types</div>
+                <div style="display:inline-block"><img src="images/gear.png"></div>
+                <br>
+                <div style="text-align:right;font-size:14px"><a href="#refresh">Refresh</a> - <a href="#expall">Expand All</a> - <a href="#vall">View All</a></div>
+            </div>
+            <button type="button" class="collapsible" style="font-size:16px"><img src="images/exparrow.png" class="rotatable"> Upcoming & Overdue</button>
+            <div class="content" style="display:block;text-align:center;font-size:14px">
+                <p>No activities to show.</p>
+                <p>Get started by sending an email, scheduling a task, and more.</p>
+            </div>
+            <button type="button" class="collapsible" style="font-size:16px"><img src="images/exparrow.png" class="rotatable" style="float:left"> <div style="float: left;margin-left:5px"> Jancember 3060</div> <div style="float:right;">Last Month </div></button>
+            <div class="content" style="display:block;text-align:center;font-size:14px">
+                <div style="font-size:12px;margin-top:3px">
+                    <img src="images/exparrow.png" class="rotatable" style="width:15px;height:15px;transform:rotate(0deg);margin-right:3px"><img src="images/mail.png" style="width:15px;height:15px;margin-right:5px"><a href="#emprev">Your inquiry to Upst...</a>12:00 PM | Jancember 15<img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg);margin-left:5px"><br>
+                    <p><a href="#emlink" name="aplemail">support@upstart.com</a> sent an email to ...</p>
+                </div>
+                
+            </div>
+
+    </div>
+    <div id="Chatter" class="tabcontent2" style="display:none">
+        <button class="tablinks3" style="background-color:#82c7ff" onclick="openTab3(event, 'Post')">Post</button>
+        <button class="tablinks3" onclick="openTab3(event, 'Poll')">Poll</button>
+        
+        <div id="Post" class="tabcontent3">
+            <input type="text" placeholder="Share an update..." style="width:80%"><input type="submit" value="Share" style="background-color:#013022;color:white;border-radius: 5px;">
+        </div>
+        <div id="Poll" class="tabcontent3" style="display:none">
+            <p>Question<br></p><textarea rows="3">What would you like to ask?</textarea>
+            <p>Choice 1<br></p><textarea rows="2"></textarea>
+            <p>Choice 2<br></p><textarea rows="2"></textarea>
+            <p><b>To: </b><select>
+                <option>Upstart only</option>
+                <option>All with access</option>
+            </select></p>
+            <button style="background-color:#013022;color:white;border-radius: 5px;">+ Add new choices</button><button style="background-color:#aaa;color:white;border-radius:5px">Ask</button>
+        </div>
+        
+
+        <br>
+
+        <img src="images/swap.png" style="display:inline;height:20px;width:20px;vertical-align: top;">
+        <input type="text" placeholder="Search this feed..." style="display:inline;vertical-align: top;">
+        <img src="images/refresh.png" style="display:inline;height:20px;width:20px;vertical-align: top;">
+        <br><br>
+        <img src="images/raccoonboy.png" style="display:inline-block;height:30px;width:30px;vertical-align: top;margin-top:15px">
+        <span style="display:inline-block;vertical-align: top;">
+            <p style="font-size: 14px;vertical-align: text-top;"><a href="#product">Product</a> updated this record.</p>
+            <p style="font-size: 14px;vertical-align: text-top;">Janucember 15, 3060 at 12:02 PM</p>
+        </span>
+        <img src="images/dropdownarrow.png" class="arrowasbutton" style="float:none;transform:rotate(0deg);display:inline-block;vertical-align: top;margin-top:15px">
+
+        <div class="chunk-section">
+            <div>
+                <p style="margin-left:10px">Phone<br>
+                    A blank value to 123-555-0000</p>
+            </div>
+            <div>
+                <p style="margin-left:10px">Mailing address<br>
+                    A blank value to 444 Upstart Rd</p>
+            </div>
+            <div style="text-align:center;border-top:1px solid #000">
+                <a href="#updates">Show All Updates</a>
+            </div>
+        </div>
+
+        <hr>
+        <button>Like</button><button>Comment</button><br>
+        <div style="background-color:#aaa;padding:10px">
+            <img src="images/raccoonboy.png" style="height:20px;width:20px;display:inline-block">
+            <input type="text" placeholder="Write a comment">
+
+        </div>
+    </div>
+
+
+
+</span>
+
+<div id="optionbox" class="optionbox">
+	<div class="optionboxoptions">Edit</div>
+	<div class="optionboxoptions">More...</div>
+</div>
+
+<div id="rejection" style="display:none;background-color:#abaff7;position:absolute; font-size:10px; padding:2px">Currently does not do anything!</div>
+
+<script>
+
+// get my persistent information
+var thisIndex = sessionStorage.selectionIndex;
+var fundingAgreements = JSON.parse(sessionStorage.fundingAgreements);
+
+
+
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].style.background = "white";
+
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.style.background = "#82c7ff";
+
+  evt.currentTarget.className += " active";
+}
+
+function openTab2(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks2");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].style.background = "white";
+
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.style.background = "#82c7ff";
+
+  evt.currentTarget.className += " active";
+}
+
+function openTab3(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent3");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks3");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].style.background = "white";
+
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.style.background = "#82c7ff";
+
+  evt.currentTarget.className += " active";
+}
+
+var contentObjects = document.getElementsByClassName("content");
+var contentHeight = [];
+
+for(let i = 0; i< contentObjects.length;i++){
+	contentObjects[i].style.display = "block";
+	contentHeight[i] = contentObjects[i].offsetHeight;
+}
+	
+var coll = document.getElementsByClassName("collapsible");
+
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var arrow = this.getElementsByClassName("rotatable")[0]
+    if (content.style.display == "block") {
+      rollUp(content, arrow, content.offsetHeight);
+    } else {
+      rollOut(content, arrow,contentHeight[i]);
+    }
+  });
+}
+
+function rollOut(content, arrow, contentHeight){
+	content.style.display= "block";
+	var pct_roll = 0;
+	var id = setInterval(frame,2);
+	var numFrames = 45;
+	function frame(){
+		if(pct_roll==numFrames){
+			clearInterval(id);
+		}else{
+			pct_roll++;
+			content.style.height= pct_roll*contentHeight/numFrames + "px";
+			arrow.style.transform = "rotate("+pct_roll*90/numFrames+"deg)";
+		}
+	}
+}
+
+function rollUp(content, arrow, contentHeight){
+	var pct_roll = 0;
+	var id = setInterval(frame,2);
+	var numFrames = 45;
+	function frame(){
+		if(pct_roll==numFrames+1){
+			clearInterval(id);
+			content.style.display="none";
+		}else{
+			let remainingHeight = contentHeight - pct_roll*contentHeight/numFrames;
+			let remainingRotation = 90-pct_roll*90/numFrames;
+			pct_roll++;
+			content.style.height= remainingHeight + "px";
+			arrow.style.transform = "rotate("+remainingRotation+"deg)";
+		}
+	}
+}
+
+document.getElementById('Related').style.display = "none";
+document.getElementById('News').style.display = "none";
+document.getElementById('Consents').style.display = "none";
+
+
+
+
+
+var closesave = document.getElementById('closesave');
+var arrowbuttons = document.getElementsByClassName('arrowasbutton');
+var optionboxshowing = false;
+var optionbox = document.getElementById('optionbox');
+var optionboxoptions = document.getElementsByClassName('optionboxoptions');
+var appbuttons = document.getElementsByClassName('app-button');
+var copop = document.getElementById('changeownerpopout');
+var modals = document.getElementsByClassName('modal');
+var cosubmit = document.getElementById('cosubmit');
+var newowner = document.getElementById('newowner');
+var cancelbtn = document.getElementById('cancelbtn');
+var altcob = document.getElementById('changeowner2');
+var complaintsubmit = document.getElementById('complaintsubmit');
+var prodlink = document.getElementById('prodlink');
+var aplname = document.getElementsByName('aplname');
+var casenum = document.getElementsByName('casenum');
+
+
+// Apply stored name and case number
+for(let i = 0; i<casenum.length;i++){
+    casenum[i].innerHTML = fundingAgreements[thisIndex].caseNumber;
+}
+for(let i = 0; i<aplname.length;i++){
+    aplname[i].textContent = fundingAgreements[thisIndex].name;
+}
+
+
+for (i = 0; i < arrowbuttons.length; i++) {
+  	arrowbuttons[i].addEventListener("click", function(evt) {
+		let ob = document.getElementById('optionbox');
+		ob.style.display = "block";
+		//let rect = evt.target.getBoundingClientRect();
+		scrolldist = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+		ob.style.left = evt.clientX-100+"px";
+		ob.style.top = evt.clientY+scrolldist + "px";
+        ob.setAttribute('ready', 'true');
+
+    });
+}
+
+
+
+for (i = 0; i < optionboxoptions.length; i++) {
+	optionboxoptions[i].addEventListener("click", function(evt) {
+		evt.target.parentElement.style.display = "none";
+		rejectSelection(evt);
+	});
+}
+
+for (i = 0; i < appbuttons.length; i++) {
+	if(appbuttons[i].id == 'changeownerbutton'){
+		appbuttons[i].addEventListener("click", function(evt) {
+			copop.style.display = "block";
+		})
+	} else{
+		appbuttons[i].addEventListener("click", function(evt) {
+			rejectSelection(evt);
+		} 
+	)};
+}
+
+window.onclick = function(event){
+    if(event.target !== optionbox && event.target.getAttribute("class") !== "arrowasbutton" ) {
+        optionbox.style.display = "none";
+    }
+};
+
+function rejectSelection(evt){
+	let r = document.getElementById('rejection');
+		let scrolldist = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+		r.style.left = evt.clientX-150 + 'px';
+		r.style.top = evt.clientY+scrolldist-5 + 'px';
+		r.style.display = "block";
+		setTimeout(() =>{
+			r.style.display = "none";
+		}, 1500);
+
+}
+var thisFA = fundingAgreements[thisIndex];
+var aplnameforem = thisFA.name;
+var aplemail = aplnameforem.replace(" ", ".").toLowerCase() + "@domain.com";
+var aplemails = document.getElementsByName('aplemail');
+for(let ae of aplemails){
+	ae.textContent = aplemail;
+	ae.value = aplemail;
+}
+var thisSubject = thisFA.emailSubject;
+var subjects = document.getElementsByName('casesubject');
+for(let s of subjects){
+	s.textContent = thisSubject;
+	s.value = thisSubject;
+}
+
+var physicaladdress = document.getElementsByName('physicaladdress');
+for(let pa of physicaladdress){
+	pa.textContent = thisFA.physicalAddress +", "+ thisFA.city + " " + thisFA.zip
+}
+</script>
+
+
+</body>
+</html>
