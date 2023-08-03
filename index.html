@@ -1,11 +1,252 @@
-<DOCTYPE !html>
-  <html>
-  <h1 onload='salesfake'>Loading...</h1>
-  <body>
-  </body>
-    <script>
-      function salesfake(){
-        window.location.href = "Salesfake/Salesfake.html";
-      }
-    </script>
-  </html>
+<DOCTYPE! html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv='cache=control' content = 'no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="pages/allpages.css">
+
+</head>
+<style>
+
+
+</style>
+<body>
+<table style="display: inline">
+<tr>
+<th>
+<div class = "logo" style="width:300px">
+	<img src = "pages/images/Upstart_ColorBlack.png" alt="Upstart" style="height:50px; width:auto;float:left"></div></th>
+	<th>
+<div class="topnav">
+	<input id="searchbar" type="text" placeholder = "Search">
+	
+</div>
+</th>
+
+</tr>
+</table>
+<div style="display: inline; float:right; margin-left:auto; text-align: text-top"><img src="pages/images/brand.png" style="height:70px;width:auto;border-radius:10px"></div>
+
+<table style="border-top:#00807B 2px solid;width:100%;margin-top:20px;table-layout:auto">
+<tr>
+<th>
+<div class= "menu">
+	<img id="menu" src="pages/images/barHover.png" class = "menu" alt="menu">
+</div></th>
+
+<th><div class="button" id="selected"><a href="Salesfake.html">Home</a></div></th>
+<th><div class="button"><a href="Salesfake/pages/SalesfakeUnassigned.html">Unassigned Queue</a></div></th>
+<th><div class="button"><a href="Salesfake/pages/SalesfakeStart.html">CRB/FW Income Verification Queue</a></div></th>
+<th><div class="button"><a href="Salesfake/pages/SalesfakeFinish.html">CRB/FW Finisher Queue</a></div></th>
+<th><div class="button"><a href="Salesfake/pages/SalesfakeCases.html">On-Boarding Case Queue</a></div></th>
+<th><div class="button"><a href="Salesfake/pages/SalesfakeAuto.html">Auto_Loans</a></div></th>
+<th><div class="button" id="navMore"><a href="#more">More</a></div></th>
+<th><div class="button"><a href="#taskbar"><img src="pages/images/pencil.png" class = "menu" alt="taskbar"></a></div></th></tr>
+</table>
+<span class="chunk" style="width:69%;display:inline-block;text-align: center; height:600px">
+		<h1>Welcome to</h1>
+		<div id="logocontainer" style="text-align: center;width:100%;height:100%">
+			<img id="mylogo" src="pages/images/brand.png" style="width:auto;height:500px;border-radius:50px;margin-bottom:15px;position:sticky">
+			<span class="gamescore">
+				<h2>Productivity:</h2>
+				<p id="prodScore"></p>
+			</span>
+			<span class="gamescore">
+				<h2>Quality:</h2>
+				<p id="qualScore"></p>
+			</span>
+			<div id="gameresult" class="gamescore" style="width:98.5%;margin-top: 10px">
+				<p id="judgement"></p>
+				<button id="resetgame" onclick="reset()">Reset</button>
+			</div>		
+		</div>
+</span>
+<span class="chunk" style="width:30%;float:right;padding:10px">
+		<h2 style="margin-left:15px">About</h2>
+		<div>
+			<button type="button" class="collapsible"><img src="pages/images/exparrow.png" class="rotatable"> Where am I?</button>
+			<div class="content">
+				<p>You are in Salesfake! This is a sandbox environment intended to mimic Salesforce. You will be using Salesforce a lot here at Upstart!</p>
+			</div>
+			<button type="button" class="collapsible"><img src="pages/images/exparrow.png" class="rotatable"> Why not just practice in Salesforce?</button>
+			<div class="content">
+				<p>Salesforce is a powerful tool for managing customer relationships, but it can be confusing. This "offline version" will allow you to get the feel of navigating Salesforce without risking unexpected customer contact. Even if you click on the wrong thing, you'll still be ok! </p>
+			</div>
+			<button type="button" class="collapsible"><img src="pages/images/exparrow.png" class="rotatable"> How do I use this?</button>
+			<div class="content">
+				<p>Most of your core work will be done through <b>queues</b>. Queues can be accessed via the links at the top of the page.</p>
+				<p>The <b>Unassigned</b>, <b>Income Verification</b>, and <b>Finisher</b> links will present you with buttons, which will assign you to a Funding Agreement.</p> 
+				<p><b>Funding Agreeements</b> are Salesforce pages containing the details of a loan application. In a live environment, you will also access <b>Product</b> via Funding Agreements.</p>
+				<p>The <b>Case</b> queue link contains buttons which will assign you to a Case. Cases contain customer email interactions, as well as complaints. Cases are vital to our customer experience (and, of course, part of the job!).</p>
+				<p>The <b>Auto_Loans</b> link is a bit different - it displays a list of funding agreements rather than buttons. Currently, this is how our auto loans are assigned: manually by selecting from a list. In Salesforce, all funding agreements can be selected this way regardless of product type.</p>
+			</div>
+			<button type="button" class="collapsible"><img src="pages/images/exparrow.png" class="rotatable"> Is this everything I need to know?</button>
+			<div class="content">
+				<p>Salesfake is intended to look and feel like Salesforce, but it does not have all of the same functionality. Please rely on your manager, resource guides, leads, and other sources of truth for updates and direction on how Salesforce should be used.</p>
+				<p>We'd love for this to be comprehensive, but Salesforce is a $150 billion company, and Jordan built this in like a month.</p>
+			</div>
+		</div>
+</span>
+
+
+
+</body>
+<script>
+
+var contentObjects = document.getElementsByClassName("content");
+var contentHeight = [];
+
+for(let i = 0; i< contentObjects.length;i++){
+	contentObjects[i].style.display = "block";
+	contentHeight[i] = contentObjects[i].offsetHeight;
+	contentObjects[i].style.display = "none";
+}
+	
+var coll = document.getElementsByClassName("collapsible");
+
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    var arrow = this.getElementsByClassName("rotatable")[0]
+    if (content.style.display == "block") {
+      rollUp(content, arrow, content.offsetHeight);
+    } else {
+      rollOut(content, arrow,contentHeight[i]);
+    }
+  });
+}
+
+function rollOut(content, arrow, contentHeight){
+	content.style.display= "block";
+	var pct_roll = 0;
+	var id = setInterval(frame,2);
+	var numFrames = 45;
+	function frame(){
+		if(pct_roll==numFrames){
+			clearInterval(id);
+		}else{
+			pct_roll++;
+			content.style.height= pct_roll*contentHeight/numFrames + "px";
+			arrow.style.transform = "rotate("+pct_roll*90/numFrames+"deg)";
+		}
+	}
+}
+
+function rollUp(content, arrow, contentHeight){
+	var pct_roll = 0;
+	var id = setInterval(frame,2);
+	var numFrames = 45;
+	function frame(){
+		if(pct_roll==numFrames+1){
+			clearInterval(id);
+			content.style.display="none";
+		}else{
+			let remainingHeight = contentHeight - pct_roll*contentHeight/numFrames;
+			let remainingRotation = 90-pct_roll*90/numFrames;
+			pct_roll++;
+			content.style.height= remainingHeight + "px";
+			arrow.style.transform = "rotate("+remainingRotation+"deg)";
+		}
+	}
+}
+
+var mylogo = document.getElementById('mylogo');
+var logocontainer = document.getElementById('logocontainer');
+var gamescore = document.getElementsByClassName('gamescore');
+var prodScore = document.getElementById('prodScore');
+var qualScore = document.getElementById('qualScore');
+
+var searchbar  = document.getElementById('searchbar');
+var menu = document.getElementById('menu');
+var devclicks = 0;
+
+menu.addEventListener('click', function(e){
+	if(searchbar.value=="Play") devclicks++;
+	if(devclicks==8){
+		gameEnable();
+		searchbar.value = "Game enabled!";
+	} 
+})
+
+var clickCounter = 0;
+var startCount = 0;
+var containerClicks = 1;
+
+function gameEnable(){
+
+	
+
+	logocontainer.addEventListener('click', function(event){
+		containerClicks++;
+	});
+
+
+	mylogo.addEventListener('click', function (event){
+	
+
+	console.log("clickCounter = " + clickCounter + "\ncontainerClicks = " + containerClicks);
+	logocontainer.style.textAlign = "left";
+	let newX = Math.floor(Math.random()*100)+"%";
+	let newY = Math.floor(Math.random()*90)+"%";
+
+	if(clickCounter==0){
+		startCount = parseInt(new Date().getTime(), 10);
+	}
+
+
+	let newHeight =  Number(this.style.height.replace("px", "")) * .8;
+	mylogo.style.height = newHeight + "px";
+	mylogo.style.left = newX;
+	mylogo.style.top = newY;
+	clickCounter++;
+	if(clickCounter==10){
+		mylogo.style.display = "none";
+		let endCount = parseInt(new Date().getTime(), 10);
+		let productivity = Math.floor(500000/(endCount - startCount));
+		let quality = (10-(containerClicks - clickCounter))*10;
+
+		for(let gs of gamescore){
+			gs.style.visibility = "visible";
+			gs.style.display = "inline-block";
+		}
+		prodScore.innerHTML = productivity;
+		qualScore.innerHTML = quality;
+		if(productivity >= 92 && quality >= 92) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Queue Master</b><br><br>Go back to work!";
+		if(productivity >= 92 && quality < 92  && quality >=75) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Acolyte of Speed</b><br><br>You may someday do great things, but you lack discipline. Go back to work!";
+		if(productivity >= 92  && quality < 75) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Maniac</b><br><br>Such wondrous, wasted speed. Go back to work!";
+		
+		if(productivity >= 75 && productivity <92  && quality >= 92) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Scholar</b><br><br>Your dedication is admirable, but speed must be a habit. Go back to work!";
+		if(productivity >= 75 && productivity <92  && quality < 92 && quality >= 75) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Mid</b><br><br>I'm sorry to have to be the one to break it to you. Go back to work!";
+		if(productivity >= 75 && productivity <92  && quality < 75) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Whelp</b><br><br>When you are older, you may one day learn of the wonders of the queues. Go back to work!";
+		
+		if(productivity < 75 && quality >= 92) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Grass Watcher</b><br><br>It looks pretty nice... but is it worth taking that long? Go back to work!";
+		if(productivity < 75 && quality < 92 && quality >=75) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Road Worker</b><br><br>We're glad you made it... finally... Go back to work!";
+		if(productivity < 75 && quality < 75) document.getElementById('judgement').innerHTML = "With this score, you have acheived the rank of <br><br><b>Connection Error</b><br><br>That can't be real, we'll give you the benefit of the doubt. Go back to work!";
+
+	}
+}
+);
+}
+
+function reset(){
+	for(let gs of gamescore){
+		gs.style.visibility = "hidden";
+		gs.style.display = "none";
+	}
+	logocontainer.style.textAlign = "center";
+	mylogo.style.display = "block";
+	mylogo.style.height = "500px";
+	mylogo.style.left = "20%";
+	mylogo.style.top = "30%";
+	clickCounter = 0;
+	containerClicks = 0;
+	startCount = 0;
+}
+
+</script>
+</html>
