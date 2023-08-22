@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="allpages.css">
+</head>
+<style>
+	
+</style>
+<body>
+<table style="display: inline">
+	<tr>
+		<th>
+			<div class = "logo" style="width:300px">
+				<img src = "images/Upstart_ColorBlack.png" alt="Upstart" style="height:50px; width:auto;float:left">
+			</div>
+		</th>
+		<th>
+			<div class="topnav">
+				<input type="text" placeholder = "Search">
+				
+			</div>
+		</th>
+
+	</tr>
+</table>
+<div style="display: inline; float:right; margin-left:auto; text-align: text-top">
+	<img id="mylogo" src="images/brand.png" style="height:70px;width:auto;border-radius:10px">
+</div>
+
+<table style="border-top:#00807B 2px solid;width:100%;margin-top:20px;table-layout:auto;margin-bottom:0px">
+	<tr>
+	<th>
+		<div class= "menu">
+			<img id="menu" src="images/barHover.png" class = "menu" alt="menu">
+		</div>
+	</th>
+	<th><div class="button"><a href="index.html">Home</a></div></th>
+	<th><div class="button"><a href="SalesfakeUnassigned.html">Unassigned Queue</a></div></th>
+	<th><div class="button"><a href="SalesfakeStart.html">CRB/FW Income Verification Queue</a></div></th>
+	<th><div class="button"><a href="SalesfakeFinish.html">CRB/FW Finisher Queue</a></div></th>
+	<th><div class="button"><a href="SalesfakeCases.html">On-Boarding Case Queue</a></div></th>
+	<th><div class="button"><a href="SalesfakeAuto.html">Auto_Loans</a></div></th>
+	<th><div class="button" id="navMore"><a href="#more">More</a></div></th>
+	<th><div class="button" id="modTaskbar"><a href="#taskbar">
+		<img src="images/pencil.png" class = "menu" alt="taskbar">
+	</a></div></th>
+	</tr>
+</table>
+
+
+<div class="chunk">
+	<div style="display:block;background-color:#d3d3d3">
+		<img src="images/dollarbill.png" style="display:inline-block;width:50px;height:auto;margin-left:15px">
+		<div style="display:inline-block">
+			<p>Funding Agreement</p>
+			<h3><a href="AccountPage.html" name="aplname">Applicant Name</a></h3>
+		</div>
+
+		<div style="float:right;margin-right:15px;margin-top:15px">
+			<div class="app-button" style="display:inline-block"><a style="text-decoration:none;color:black;margin-left:2px;margin-right:2px" href="#edit">Edit</a></div>
+			<div class="app-button" style="display:inline-block"><a style="text-decoration:none;color:black;margin-left:2px;margin-right:2px" href="#mailmerge">Mail Merge</a></div>
+		</div>
+	</div>
+	<div style="display:block" class="fa-about">
+		<div style="display:inline-block;width:20%;margin-left:15px">
+			<p>Lending Program Logo</p>
+			<p>Upstart</p>
+		</div>
+		<div style="display:inline-block;width:10%">
+			<p>Loan ID</p>
+			<p style="visibility: hidden;">none</p>
+		</div>
+		<div style="display:inline-block;width:10%">
+			<p>Auto Colleciton Status (exp)</p>
+			<p>Delinquent</p>
+		</div>
+		<div style="display:inline-block;width:10%">
+			<p>Servicing Page</p>
+			<p><a id="servicingPageLink" href="#ServicingPage">URL for 0</a></p>
+		</div>
+		<div style="display:inline-block;width:10%">
+			<p>Amort page</p>
+			<p><a href="#amort">0</a></p>
+		</div>
+	</div>
+</div>
+
+<div class="chunk" style="font-weight:700; color: red; padding: 10px">
+	There are open cases associated with this application
+</div>
+
+<span class="chunk" style="display:inline-block; width:70%">
+	<div class="tab" style="width:100%;display:table-row">
+		<button class="tablinks" style="background-color:#82c7ff" onclick="openTab(event,'Details')">Details</button>
+		<button class="tablinks" style="background-color:rgb(247, 247, 247)" onclick="openTab(event,'Related')">Related</button>
+
+	</div>
+	<div id="Details" class="tabcontent">
+
+		<table class="tabcontentHalfTable" style="margin-left:8px; margin-right:5px">
+			<tr><td>Account Name</td><td name="aplname">Payments Test Training</td></tr>
+			<tr><td>Roll Up Summary Count</td><td>1</td></tr>
+			<tr><td>User Email</td><td name="aplemail">n/a</td></tr>
+			<tr><td>Lending_program(new)</td><td>upstart</td></tr>
+			<tr><td>Ops Status</td><td>Verified</td></tr>
+			<tr><td>Bank Customer Relationship</td><td><a href="#upstart">upstart</a></td></tr>
+			<tr><td>Bank products</td><td><a href="#bankproducts">personal_loan_upstart_crb</a></td></tr>
+			<tr><td>SSN (Bureau)</td><td></td></tr>
+			<tr><td>DoB (Bureau) &#9432;</td><td></td></tr>
+			<tr><td>Link to other loan</td><td></td></tr>
+			<tr><td>Address (bureau)</td><td></td></tr>
+		</table>
+		
+		<table class="tabcontentHalfTable">
+			<tr><td>Upstart &#9432;</td><td><a name="aplname" href="AccountPage.html">Applicant Name</a></td></tr>
+			<tr><td>Preferred Language</td><td>English</td></tr>
+			<tr><td>Application language</td><td>English</td></tr>
+			<tr><td>Loan ID &#9432;</td><td></td></tr>
+			<tr><td>Servicing page</td><td><a href="#Servicing">URL for 0</a></td></tr>
+			<tr><td>Amort page</td><td><a href="#amort">0</a></td></tr>
+			<tr><td>Servicing Owner</td><td></td></tr>
+			<tr><td>Servicing Team</td><td></td></tr>
+			<tr><td>Amortization Schedule Status</td><td></td></tr>
+			<tr><td>Product Status &#9432;</td><td></td></tr>
+			<tr><td>Investor loan register name</td><td>Upstart Network, Inc.</td></tr>
+		</table>
+
+		<button type="button" class="collapsible">
+			<img src="images/exparrow.png" class="rotatable"> Lending Program</button>
+		<div class="content" style="display:block">
+			<table class="tabcontentHalfTable">
+				<tr><td>Lending Program Brand Name</td><td>Upstart</td></tr>
+				<tr><td>Lending Program Servicing PhoneNumber</td><td>(855) 451-6753</td></tr>
+				<tr><td>Lending Program Servicing Email</td><td><a href="#email">servicing@upstart.com</a></td></tr>
+			</table>
+			<table class="tabontentHalfTable">
+				<tr><td>Lending Program Website</td><td><a href="https://www.upstart.com">https://www.upstart.com</a></td></tr>
+			</table>
+		</div>
+
+		<button type="button" class="collapsible">
+			<img src="images/exparrow.png" class="rotatable"> Payments</button>
+		<div class="content" style="display:block">
+			<table class="tabcontentHalfTable">
+				<tr><td>Bi monthly PPS</td><td><input type="checkbox"></td></tr>
+				<tr><td>Payment Preference Amount</td><td></td></tr>
+				<tr><td>Payment Preference Type</td><td></td></tr>
+				<tr><td>Payment Preference Bank</td><td>UPST FCU</td></tr>
+				<tr><td>Next Payment Due</td><td></td></tr>
+				<tr><td>Next Pyament Amount Due</td><td>$286.59</td></tr>
+				<tr><td>Most recent payment amount</td><td>$286.59</td></tr>
+			</table>
+			<table class="tabcontentHalfTable">
+				<tr><td>Next Payment Date</td><td></td></tr>
+				<tr><td>Next Payment Amount</td><td></td></tr>
+				<tr><td>Next payment date 2</td><td></td></tr>
+				<tr><td>Next payment amount 2</td><td></td></tr>
+				<tr><td>Days Until Next Payment</td><td></td></tr>
+				<tr><td>MOB</td><td></td></tr>
+				<tr><td>Pay periods completed</td><td>999</td></tr>
+			</table>
+		</div>
+
+		<button type="button" class="collapsible">
+			<img src="images/exparrow.png" class="rotatable"> Collections</button>
+		<div class="content" style="display:block">
+			<table class="tabcontentHalfTable">
+				<tr><td>Auto collection status (exp)</td><td>Delinquent</td></tr>
+				<tr><td>Collection Status</td><td>In BK proceeding</td></tr>
+				<tr><td>Promise to waive fees &#9432;</td><td><input type="checkbox"></td></tr>
+				<tr><td>Late fee waive OK</td><td><input type="checkbox"></td></tr>
+				<tr><td>Rep by attorney</td><td><input type="checkbox"></td></tr>
+				<tr><td>Cease calls only &#9432;</td><td><input type="checkbox" checked></td></tr>
+				<tr><td>Cease and Desist (all comm) &#9432;</td><td><input type="checkbox" checked></td></tr>
+				<tr><td>FDCPA One Communication met</td><td><input type="checkbox" checked></td></tr>
+				<tr><td>Ever_affected_by_covid_19</td><td><input type="checkbox"></td></tr>
+				<tr><td>Days Overdue</td><td>-509</td></tr>
+				<tr><td>Next work date</td><td></td></tr>
+			</table>
+			
+			<table class="tabcontentHalfTable">
+				<tr><td>Service call after grace</td><td><input type="checkbox"></td></tr>
+				<tr><td>OK_to_text_for_servicing</td><td></td></tr>
+				<tr><td>New service call OK</td><td><input type="checkbox"></td></tr>
+				<tr><td>Oldest Due Date Past Due</td><td>1/21/2021</td></tr>
+				<tr><td>Last date of Grace</td><td>2/5/2021</td></tr>
+				<tr><td>Amount Past Due</td><td>$286.59</td></tr>
+				<tr><td>Unpaid ACH Return Fees</td><td></td></tr>
+				<tr><td>Unpaid Check Return Fees</td><td></td></tr>
+				<tr><td>Unpaid Late Fees</td><td></td></tr>
+				<tr><td>Total past due amt</td><td>286.59</td></tr>
+				<tr><td>Full scheduled in grace</td><td><input type="checkbox"></td></tr>
+			</table>
+		</div>
+	</div>
+
+	<div id="Related" class="tabcontent">
+		<div class="chunk" id="fundingAgreementsSection">
+			<div class="sectionTitle">
+				<text style="font-size: 14px"><a href="#fundingagreements">Funding Agreements</a> > <a href="#thisFA">a07100000818N4Nj</a></text>
+				<br><text style="font-size: 20px;font-weight:700">Funding Agreement History</text>
+				<br>
+				<table style="width:100%; margin-top:15px">
+					<tr><td style="text-align:left">80+ items - Sorted by Date - Updated a few seconds ago</td><td style="text-align:right">buttons</td></tr>
+				</table>
+			</div>
+			<table id="faHistoryTable">
+				<tr>
+					<th style="width:10%">Row</th>
+					<th>Date</th>
+					<th>Field</th>
+					<th>User</th>
+					<th>Original Value</th>
+					<th>New Value</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</span>
+
+<span class="rightSideSection">
+
+	<!-- Servicing Communications Section -->
+
+	<div class="chunk" style="display:block">
+		<div class="sectionTitle">
+			<img src="images/phone.png" style="height:20px">
+			Servicing Communications (3+)
+			<img src="images/dropdownarrow.png" class="arrowasbutton">
+		</div>
+		<div>
+			<table id="scsection">
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><th>10/21/2022 11:54 AM</th></tr>
+							<tr><td>Method:</td><td>Outbound call to First party pri (User provided)</td></tr>
+							<tr><td>Resolution:</td><td>Promised to pay in full. Scheduled</td></tr>
+							<tr><td>Servicing Comm...</td><td><a href="#servcomm">15689393</a></td></tr>
+						</table>
+					</td>
+					<td>
+						
+							<img src="images/dropdownarrow.png" class="arrowasbutton" style="vertical-align: top;">
+						
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><th>7/9/2022 12:06 PM</th></tr>
+							<tr><td>Method:</td><td>Inbound call from 1st party</td></tr>
+							<tr><td>Resolution:</td><td>Promised to pay partial. Scheduled</td></tr>
+							<tr><td>Servicing Comm...</td><td><a href="#servcomm">13612252</a></td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><th>6/13/2022 4:23 PM</th></tr>
+							<tr><td>Method:</td><td>Inbound call from 1st party</td></tr>
+							<tr><td>Resolution:</td><td>Upstart provided loan information</td></tr>
+							<tr><td>Servicing Comm...</td><td><a href="#servcomm">20219107</a></td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton">
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div style="border-top:solid 1px gray; text-align:center">
+			<a href="#viewallServComm">View All</a>
+		</div>
+	</div>
+
+	<!-- Cases section -->
+
+	<div class="chunk" style="display:block">
+		<div class="sectionTitle">
+			<img src="images/case.png" style="height:20px">
+			Cases (3+)
+			<img src="images/dropdownarrow.png" class="arrowasbutton">
+		</div>
+		<div>
+			<table id="casesection">
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><td><a href="#casenum">0660689</a></td></tr>
+							<tr><td>Subject:</td><td><a href="FakeCase.html">ACH auth</a></td></tr>
+							<tr><td>Date/Time:</td><td>6/13/2022 4:37 PM</td></tr>
+							<tr><td>Status</td><td>Closed</td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton" style="vertical-align: top;">
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><td><a href="#casenum">06589159</a></td></tr>
+							<tr><td>Subject:</td><td><a href="FakeCase.html">Complaint Follow Up Requested</a></td></tr>
+							<tr><td>Date/Time:</td><td>6/10/2022 3:17 PM</td></tr>
+							<tr><td>Status</td><td>Closed</td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><td><a href="#casenum">06589156</a></td></tr>
+							<tr><td>Subject:</td><td><a href="FakeCase.html">Complaint Follow Up Requested</a></td></tr>
+							<tr><td>Date/Time:</td><td>6/10/2022 3:17 PM</td></tr>
+							<tr><td>Status</td><td>Closed</td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton">
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div style="border-top:solid 1px gray; text-align:center">
+			<a href="#viewallServComm">View All</a>
+		</div>
+	</div>
+
+	<!-- Loan modification requests section -->
+
+	<div class="chunk" style="display:block">
+		<div class="sectionTitle">
+			<img src="images/knight.png" style="height:20px">
+			Loan Modification Requests (2)
+			<img src="images/dropdownarrow.png" class="arrowasbutton">
+		</div>
+		<div>
+			<table id="loanmodsection">
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><td><a href="#lmreq">202008-49743</a></td></tr>
+							<tr><td>Date of Req:</td><td>8/14/2020 3:10 PM</td></tr>
+							<tr><td>Record Type:</td><td><a href="#lmreq">Settlement</a></td></tr>
+							<tr><td>Status:</td><td>Declined and Addressed</td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton" style="vertical-align: top;">
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><td><a href="#lmreq">202006-62940</a></td></tr>
+							<tr><td>Date of Req:</td><td>6/3/2022 3:08 PM</td></tr>
+							<tr><td>Record Type:</td><td><a href="#lmreq">Hardship</a></td></tr>
+							<tr><td>Status:</td><td>HOP. Pending BR Acceptance</td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton">
+						</div>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+		<div style="border-top:solid 1px gray; text-align:center">
+			<a href="#viewallServComm">View All</a>
+		</div>
+	</div>
+
+	<!-- Files section -->
+
+	<div class="chunk" style="display:block">
+		<div class="sectionTitle">
+			<img src="images/files.png" style="height:20px">
+			Files (1)
+			<img src="images/dropdownarrow.png" class="arrowasbutton">
+		</div>
+		<div>
+			<table id="filessection">
+				<tr>
+					<td>
+						<table class="scTable">
+							<tr><td><a href="#files">Screen Shot 2022-02-17 at 11.08.27 AM</a></td></tr>
+							<tr><td>Feb 17, 2022 - 73KB - png</td></tr>
+						</table>
+					</td>
+					<td>
+						<div class="scbutton">
+							<img src="images/dropdownarrow.png" class="arrowasbutton" style="vertical-align: top;">
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div style="border-top:solid 1px gray; text-align:center">
+			<a href="#viewallServComm">View All</a>
+		</div>
+	</div>
+
+	<!-- Notes section -->
+
+	<div class="chunk" style="display:block">
+		<div class="sectionTitle">
+			<img src="images/Notes.png" style="height:20px">
+			Notes (3+)
+			<img src="images/dropdownarrow.png" class="arrowasbutton">
+		</div>
+		<div>
+			<table id="notessection">
+				<tr>
+					<table>
+						<tr><td><a href="#notes">Untitled Note</a></td></tr>
+						<tr><td>6/3/2022 2:20 PM by <a href="#agent">Credit Analyst</a></td></tr>
+						<tr><td>Br verified  Br wanted to check on payment history  Told them payment processed in dec and another set up in jan br set...</td></tr>
+					</table>
+				</tr>
+				<tr>
+					<table>
+						<tr><td><a href="#notes">Untitled Note</a></td></tr>
+						<tr><td>6/3/2022 2:17 PM by <a href="#agent">Credit Analyst</a></td></tr>
+						<tr><td>BR Verified BR called about receiving payment</td></tr>
+					</table>
+				</tr>
+				<tr>
+					<table>
+						<tr><td><a href="#notes">Untitled Note</a></td></tr>
+						<tr><td>6/3/2022 2:16 PM by <a href="#agent">Credit Analyst</a></td></tr>
+						<tr><td>br verified br wanted to know when we received last payment confirmed we received last payment 12/15/2021 and next...</td></tr>
+					</table>
+				</tr>
+				
+			</table>
+		</div>
+		<div style="border-top:solid 1px gray; text-align:center">
+			<a href="#viewallServComm">View All</a>
+		</div>
+	</div>
+
+</div>
+
+</span>
+
+<div id="rejection" style="display:none;background-color:#abaff7;position:absolute; font-size:10px; padding:2px">Currently does not do anything!</div>
+
+
+<script type="text/javascript" src="allpages.js"></script>
+<script type="text/javascript" src="servicing.js"></script>
+
+
+</body>
+</html>

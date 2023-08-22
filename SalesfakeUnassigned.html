@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="allpages.css">
+</head>
+<style>
+	
+
+</style>
+<body>
+<table style="display: inline">
+<tr>
+<th>
+<div class = "logo" style="width:300px">
+	<img src = "images/Upstart_ColorBlack.png" alt="Upstart" style="height:50px; width:auto;float:left"></div></th>
+	<th>
+<div class="topnav">
+	<input type="text" placeholder = "Search">
+	
+</div>
+</th>
+
+</tr>
+</table>
+<div style="display: inline; float:right; margin-left:auto; text-align: text-top"><img id="mylogo" src="images/brand.png" style="height:70px;width:auto;border-radius:10px"></div>
+
+<table style="border-top:#00807B 2px solid;width:100%;margin-top:20px;table-layout:auto;margin-bottom:0px">
+	<tr>
+<th>
+<div class= "menu">
+	<img id="menu" src="images/barHover.png" class = "menu" alt="menu">
+</div></th>
+
+<th><div class="button"><a href="index.html">Home</a></div></th>
+<th><div class="button" id="selected"><a href="SalesfakeUnassigned.html">Unassigned Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeStart.html">CRB/FW Income Verification Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeFinish.html">CRB/FW Finisher Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeCases.html">On-Boarding Case Queue</a></div></th>
+<th><div class="button"><a href="SalesfakeAuto.html">Auto_Loans</a></div></th>
+<th><div class="button" id="navMore"><a href="#more">More</a></div></th>
+<th><div class="button" id="modTaskbar"><a href="#taskbar">
+	<img src="images/pencil.png" class = "menu" alt="taskbar">
+</a></div></th>
+</tr>
+</table>
+<div class="chunk">
+<h4 style="margin-left:15px">Thank you sir may I have another...</h4>
+<p style="margin-left:15px">Apps taken today: <b id="numapps">0</b></p>
+<a style="text-decoration:none;color:black" href="FakeFundingAgreement.html"><div class="app-button" style="width:120px;text-align:center;margin-left:15px;margin-bottom:15px">Unassigned</div></a>
+</div>
+<div class="chunk">
+<h4 style="margin-left:15px">My apps worked today</h4>
+<table  style="width:95%;table-layout:fixed;margin-left:15px;margin-right:15px;background-color:#d3d3d3" id="workedapps">
+<tr>
+<th style="width:30%;text-align:left">UPSTART NAME</th>
+<th style="width:30%;text-align:left">PRODUCT STATUS</th>
+<th style="width:20%;text-align:left">OPS STATUS</th>
+<th style="width:10%;text-align:left">ID</th>
+</tr>
+</table>
+</div>
+<div id="rejection" style="display:none;background-color:#abaff7;position:absolute; font-size:10px; padding:2px">Currently does not do anything!</div>
+
+</body>
+<script type="text/javascript" src="allpages.js"></script>
+<script type="text/javascript" src="getapp.js"></script>
+<script>
+
+	if(sessionStorage.fundingAgreements){
+
+		for(let i = 0; i<thisIndex;i++){
+			
+			if(fundingAgreements[i].appId != undefined){
+				if(fundingAgreements[i].from == "funding agreements"){
+					let numRows = workedapps.rows.length;
+					let row = workedapps.insertRow(numRows);
+
+					row.bgColor="white";
+					//row.insertCell(1).innerHTML = "<a href='FakeCase.html' id='click" +i+"' onclick='selectCase("+i+")'>"+cnums[i]+"<a>";
+
+					row.insertCell(0).innerHTML = "<a href='AccountPage.html' id='app"+i+"' onclick='selectAccount("+i+")'>"+fundingAgreements[i].name+"</a>";
+					row.insertCell(1).innerHTML = fundingAgreements[i].productStatus;
+					row.insertCell(2).innerHTML = fundingAgreements[i].opsStatus;
+					row.insertCell(3).innerHTML = fundingAgreements[i].appId;
+					numapps.innerHTML = numRows;
+
+				}
+			}
+		}
+	} 
+
+</script>
+<script type="text/javascript" src="allpages.js"></script>
+
+</html>
