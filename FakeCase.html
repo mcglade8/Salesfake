@@ -372,6 +372,7 @@
 </div>
 
 <div id="templatespopout" class="modal" style="z-index: 2; width: 1000px; left:15%">
+	<input id="searchTemplates" placeholder="Search..." type="text" oninput="filterTemplates(this)">
 	<div class="modal-content" style="width:90%">
 		<span class="close">&times;</span>
 		<div id="templatecontent" style="text-align: center;padding:5px;">
@@ -995,6 +996,15 @@ for(let pa of physicaladdress){
 	pa.textContent = thisFA.physicalAddress +", "+ thisFA.city + " " + thisFA.zip
 }
 document.getElementById('opsStatus').textContent = thisFA.opsStatus;
+
+function filterTemplates(i){
+	var list = document.getElementById('templatesList');
+	var userInput = i.value;
+
+	for(let r of list.rows){
+		if(!r.innerHTML.includes(userInput)) r.style.display = "none";
+	}
+}
 </script>
 
 <script type="text/javascript" src="allpages.js"></script>
