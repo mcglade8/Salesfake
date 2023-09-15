@@ -372,10 +372,11 @@
 </div>
 
 <div id="templatespopout" class="modal" style="z-index: 2; width: 1000px; left:15%">
-	<input id="searchTemplates" placeholder="Search..." type="text" oninput="filterTemplates(this)">
 	<div class="modal-content" style="width:90%">
 		<span class="close">&times;</span>
 		<div id="templatecontent" style="text-align: center;padding:5px;">
+			Search templates: <input id="searchTemplates" placeholder="Search..." type="text" onchange="filterTemplates(this)">
+
 			<br><br>
 			
 				<table id="templatesList" style="table-layout:fixed;white-space: nowrap;width:100%">
@@ -1002,7 +1003,7 @@ function filterTemplates(i){
 	var userInput = i.value;
 
 	for(let r of list.rows){
-		if(!r.innerHTML.includes(userInput)) r.style.display = "none";
+		if(!r.innerHTML.includes(userInput)) r.style.display = "none"; else r.style.display = "";
 	}
 }
 </script>
